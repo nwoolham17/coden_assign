@@ -48,19 +48,12 @@
 .banner-btn a span{
     width: 0;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: none;
     z-index: -1;
     transition: 0.5s;
-}
-.banner-btn a:hover span{
-    width: 100%;
-}
-.banner-btn a:hover{
-    width: 100%;
-    color: black;
 }
 
 #sideNav{
