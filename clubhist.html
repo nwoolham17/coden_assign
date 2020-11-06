@@ -1,0 +1,123 @@
+<!--Club History -->
+
+<section id="clubhist">
+    <div class="title-text">
+    <link rel="stylesheet" href="main.css">
+    <p>Club History</p>
+    <h1>The Trophy Room</h1>
+    </div>
+    <div class="clubhist-row">
+        <div class="clubhist-col">
+            <div class="trophy">
+                <img src="trophy.jpg">
+                <div class="trophy-info">
+                    <h4>Trophy Cabinet</h4>
+                </div>
+            </div>
+            <p>FA Cup Winners: 1922–23, 1925–26, 1928–29, 1957–58
+                <hr>
+                Runners-up: 1893–94, 1903–04, 1952–53
+                <hr>
+                Semi-finalists: 1888–89, 1895–96, 1914–15, 1934–35, 1945–46, 1999–2000, 2010–11
+                <hr>
+                Football League Cup
+                Runners-up: 1994–95, 2003–04
+                Semi-finalists: 1976–77, 1999–2000
+                <hr>
+                FA Charity Shield
+                Winners: 1958
+                <hr>
+                Football League Trophy
+                Champions: 1988–89
+                Runners-up: 1985–86</p>
+        </div>
+        <div class="clubhist-col">
+            <div class="records">
+                <img src="record.jpg">
+                <div class="record-info">
+                    <h4>All time Club Records</h4>
+                    <small>Most Goals Scored</small>
+                </div>
+            </div>
+            <p> 1.	Nat Lofthouse 1946–1960	285 Goals
+                <hr>
+                2.	Joe Smith	  1908–1927	277 Goals
+                <hr>
+                3.	David Jack	  1920–1928	161 Goals
+                <hr>
+                4.	Jack Milsom	  1929–1937	153 Goals
+                <hr>
+                5.	Ray Westwood  1928–1947	144 Goals </p>
+        </div>
+        <div class="clubhist-col">
+            <div class="history">
+                <img src="histo.jpg">
+                <div class="history-info">
+                    <h4>Club History</h4>
+                </div>
+            </div>
+            <p>Early history (1877–1929)
+                The club was founded by the Reverend Joseph Farrall Wright, Perpetual curate of Christ Church Bolton, and Thomas Ogden, the schoolmaster at the adjacent church school, in 1874 as Christ Church F.C.
+                <br>
+                It was initially run from the church of the same name on Deane Road, Bolton, on the site where the Innovation factory of the University of Bolton now stands.
+                <br> 
+                The club left the location following a dispute with the vicar, and changed its name to Bolton Wanderers in 1877. 
+                <br>
+                The name was chosen as the club initially had a lot of difficulty finding a permanent ground to play on, having used three venues in its first four years of existence.
+                <br>
+                Bolton were one of the 12 founder members of the Football League, which formed in 1888. 
+                <br>
+                At the time Lancashire was one of the strongest footballing regions in the country, with 6 of the 12 founder clubs coming from within the boundaries of the historic county of Lancashire. 
+                <br>
+                Having remained in the Football League since its formation, Bolton have spent more time in the top flight (Premier League/old First Division) than out of it.</p>
+        </div>
+    </div>
+</section>
+
+
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="legends.html">Legends</a></li>
+        <li><a href="clubhist.html">Club History</a></li>
+
+    </ul>    
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="menic.png" id="menu">
+</div>
+
+
+
+
+
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-150px"
+
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-150px"){
+        sideNav.style.right = "0";
+        menu.src = "close.png"
+    }
+    else{
+        sideNav.style.right = "-150px";
+        menu.src = "newlogo.png";
+    }
+}
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true
+})
+
+
+</script>

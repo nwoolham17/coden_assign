@@ -1,0 +1,72 @@
+<html>
+<head>
+    <title>BWFC Fan Site</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width =device-width,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelvir.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+<section id="banner">
+    <img src="bolblue.jpg" class="logo">
+    <div class="banner-text">
+        <h1>BWFC Fan Zone</h1>
+        <p>The only unoffical BWFC fan site that matters!</p>
+        <div class="banner-btn">
+            <a href="clubhist.html"><span></span>Club History</a>
+            <a href="legends.html"><span></span>Legends</a>
+        </div>
+    </div>
+</section>
+
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="legends.html">Legends</a></li>
+        <li><a href="clubhist.html">Club History</a></li>
+
+    </ul>    
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="menic.png" id="menu">
+</div>
+
+
+
+
+
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-150px"
+
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-150px"){
+        sideNav.style.right = "0";
+        menu.src = "close.png"
+    }
+    else{
+        sideNav.style.right = "-150px";
+        menu.src = "newlogo.png";
+    }
+}
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true
+})
+
+
+</script>
+</body>
+
+</html>

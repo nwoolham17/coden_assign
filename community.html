@@ -1,0 +1,90 @@
+<!--Community-->
+
+<section id="community">
+    <div class="title-text">
+    <link rel="stylesheet" href="main.css">
+    <p>Our BWFC</p>
+    <h1>Community Feed</h1>    
+    </div>  
+    <div class="community-box">
+        <div class="community">
+            <h1>Meet Friends</h1>
+            <div class="community-desc">
+                <div class="community-icon">
+                    <i class="fa fa-shield"></i>
+                </div>
+                <div class="community-text">
+                    <p>The BWFC Fan Zone is the place for like-minded Wanderers.</p>    
+                </div>
+            </div>
+            <h1>Book Fan Zone Events</h1>
+            <div class="community-desc">
+                <div class="community-icon">
+                    <i class="fa fa-check-square-o"></i>
+                </div>
+                <div class="community-text">
+                    <p>Book Fan Zone Events - including; Away days, Sportsman's lunch and charity events</p>
+                </div>
+            </div>
+            <h1>Fan Zone Lottery</h1>
+            <div class="community-desc">
+                <div class="community-icon">
+                    <i class="fa fa-money"></i>
+                </div>
+                <div class="community-text">
+                    <p>Join the Fan Zone Lottery to win big prizes</p>
+                </div>
+    </div>
+        
+            
+        
+    </div>  
+    </section>
+
+    
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="legends.html">Legends</a></li>
+        <li><a href="clubhist.html">Club History</a></li>
+
+    </ul>    
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="menic.png" id="menu">
+</div>
+
+
+
+
+
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-150px"
+
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-150px"){
+        sideNav.style.right = "0";
+        menu.src = "close.png"
+    }
+    else{
+        sideNav.style.right = "-150px";
+        menu.src = "newlogo.png";
+    }
+}
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true
+})
+
+
+</script>

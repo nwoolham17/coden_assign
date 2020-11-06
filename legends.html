@@ -1,0 +1,101 @@
+<!--Legends  -->
+
+<section id="legends">
+    <div class="title-text">
+    <link rel="stylesheet" href="main.css">
+    <p>Legends</p>
+    <h1>BWFC GOATs</h1>
+    </div>
+    <div class="legends-box">
+        <div class="single-legend">
+            <img src="natloft.jpg">
+            <div class="overlay"></div>
+            <div class="legend-desc"></div>
+                <h3>Nat Lofthouse OBE</h3>
+                <hr>
+                <p>Nathaniel Lofthouse OBE (27 August 1925 – 15 January 2011) was an English professional footballer who played as a forward for Bolton Wanderers for his entire career. 
+                He won 33 caps for England between 1950 and 1958, scoring 30 goals, with one of the highest goals-per-game ratios of any England player.</p>
+        </div>
+        <div class="single-legend">
+            <img src="jayjay2.jpg">
+            <div class="overlay"></div>
+            <div class="legend-desc"></div>
+                <h3>Jay Jay Okocha</h3>
+                <hr>
+                <p>Okocha joined Bolton Wanderers on a free transfer after leaving PSG in the summer of 2002 after the FIFA World Cup. 
+                His debut season, despite being hampered by injuries, made him a favourite with the Bolton fans, with the team printing shirts with the inscription "Jay-Jay – so good they named him twice". 
+                He steered the team away from relegation with seven goals, including the team Goal of the Season in the vital league win against West Ham United. 
+                This was voted Bolton's best Premier League goal in a fans vote in 2008.</p>
+        </div>
+        <div class="single-legend">
+            <img src="youri.jpg">
+            <div class="overlay"></div>
+            <div class="legend-desc"></div>
+                <h3>Youri Djorkaeff</h3>
+                <hr>
+                <p>At international level, Djorkaeff scored 28 goals in 82 appearances with the French national team between 1993 and 2002. 
+                He won the 1998 FIFA World Cup, Euro 2000, and the 2001 FIFA Confederations Cup, also taking part at Euro 1996 and the 2002 FIFA World Cup.</p>
+                <br>
+                <p>Djorkaeff turned many heads when signing with Bolton Wanderers in 2002, but added a lot of class to the team during his three seasons there, resulting in the creation of an international "dream-team" alongside the wonderful Jay-Jay Okocha. </p>
+        </div>
+        <div class="single-legend">
+            <img src="superj.jpg">
+            <div class="overlay"></div>
+            <div class="legend-desc"></div>
+                <h3>John McGinlay</h3>
+                <hr>
+                <p>McGinlay is perhaps best known for his five-year spell with Bolton Wanderers between 1992 and 1997, where his scoring exploits led to him being nicknamed 'Super John'.
+                After his goals eliminated FA Cup holders Liverpool from the competition, he successfully partnered fellow Scot Andy Walker as the Trotters gained promotion from the third tier in 1993, with McGinlay scoring the match winning penalty in the last fixture against local rivals Preston North End.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<div id="sideNav">
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="legends.html">Legends</a></li>
+        <li><a href="clubhist.html">Club History</a></li>
+
+    </ul>    
+    </nav>
+</div>
+<div id="menuBtn">
+    <img src="menic.png" id="menu">
+</div>
+
+
+
+
+
+
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right = "-150px"
+
+menuBtn.onclick = function(){
+    if(sideNav.style.right == "-150px"){
+        sideNav.style.right = "0";
+        menu.src = "close.png"
+    }
+    else{
+        sideNav.style.right = "-150px";
+        menu.src = "newlogo.png";
+    }
+}
+
+var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 1000,
+    speedAsDuration: true
+})
+
+
+</script>
